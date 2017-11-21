@@ -1,4 +1,4 @@
-from common import utils
+import termux
 
-out, rc, err = utils.execute(['ls', '-la'])
-print(out, rc, err)
+print(termux.battery_status())
+print(termux.camera_info())
