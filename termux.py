@@ -147,7 +147,7 @@ def termux_share():
 
 
 def termux_sms_inbox():
-    out, rc, err = utils.execute('termux-sms-inbx')
+    out, rc, err = utils.execute('termux-sms-inbox')
     if rc:
         raise Exception(err)
     return out
