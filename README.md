@@ -5,4 +5,4 @@
 ---------------------------------------------
 
 I do not frequently work on this project, and most of the code was written on my phone (thanks termux) while being
-on the subway.
+on the subway. Feel free to make pull requests :)
