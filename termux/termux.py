@@ -1,5 +1,5 @@
 import subprocess
-from common import utils
+from termux.common import utils
 
 
 """
