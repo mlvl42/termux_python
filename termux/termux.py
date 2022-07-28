@@ -337,13 +337,13 @@ def toast(
     cmd = ["termux-toast"]
 
     if bgcolor:
-        cmd += ['-b', bgcolor]
+        cmd += ["-b", bgcolor]
     if color:
-        cmd += ['-c', color]
+        cmd += ["-c", color]
     if gravity:
-        cmd += ['-g', gravity]
+        cmd += ["-g", gravity]
     if short:
-        cmd.append('-s')
+        cmd.append("-s")
 
     cmd.append(text)
 
@@ -351,11 +351,11 @@ def toast(
 
 
 def torch(enabled: bool):
-    api_wrapper(['termux-torch', "on" if enabled else "off"])
+    api_wrapper(["termux-torch", "on" if enabled else "off"])
 
 
 def tts_engines() -> List[Dict]:
-    return json.loads(api_wrapper('termux-tts-engines'))
+    return json.loads(api_wrapper("termux-tts-engines"))
 
 
 def tts_speak(
@@ -376,15 +376,15 @@ def tts_speak(
     if lang:
         cmd += ["-l", lang]
     if region:
-        cmd += ["-n",region]
+        cmd += ["-n", region]
     if variant:
-        cmd += ["-v",variant]
+        cmd += ["-v", variant]
     if pitch:
-        cmd += ["-p",pitch]
+        cmd += ["-p", pitch]
     if rate:
-        cmd += ["-r",rate]
+        cmd += ["-r", rate]
     if stream:
-        cmd += ["-s",stream]
+        cmd += ["-s", stream]
 
     cmd.append(text)
 
@@ -392,28 +392,28 @@ def tts_speak(
 
 
 def vibrate(duration: Optional[int] = None, force: bool = False):
-    cmd = ['termux-vibrate']
+    cmd = ["termux-vibrate"]
 
     if duration:
-        cmd += ['-d', duration]
+        cmd += ["-d", duration]
 
     if force:
-        cmd.append('-f')
+        cmd.append("-f")
 
     api_wrapper(cmd)
 
 
 def volume(stream: str, value: int):
-   api_wrapper(['termux-volume', stream, value])
+    api_wrapper(["termux-volume", stream, value])
 
 
 def wifi_connectioninfo():
-   return json.loads(api_wrapper('termux-wifi-connectioninfo'))
+    return json.loads(api_wrapper("termux-wifi-connectioninfo"))
 
 
 def wifi_enable(enabled: bool):
-   api_wrapper(['termux-wifi-enable', 'true' if enabled else 'false'])
+    api_wrapper(["termux-wifi-enable", "true" if enabled else "false"])
 
 
 def wifi_scaninfo():
-   return json.loads(api_wrapper('termux-wifi-scaninfo'))
+    return json.loads(api_wrapper("termux-wifi-scaninfo"))
