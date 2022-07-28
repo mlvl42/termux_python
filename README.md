@@ -1,14 +1,18 @@
 # termux_python
 
-`termux_python` provides python bindings for the awesome https://wiki.termux.com/wiki/Termux:API
+`termux_python` provides python bindings for https://wiki.termux.com/wiki/Termux:API
+and other termux specific binaries.
 
-I do not frequently work on this project, and most of the code was written on my phone (thanks termux) while being
-on the subway.
+> **NOTE**:
+> I do not frequently work on this project, and most of the code was written on my phone (thanks termux) while being
+> in the subway. Expect some bugs :bug: !
+>
+> Any contributions are welcome.
 
-## TODO
+# Install
 
-- Better api design (use meta programming instead of declaring each functions)
-- Add examples
-- pip package
-
-Any contributions are welcome.
+```
+git clone https://github.com/mlvl42/termux_python
+cd termux_python
+python3 setup.py install
+```
