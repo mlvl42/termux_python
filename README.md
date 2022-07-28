@@ -1,7 +1,7 @@
 # termux_python
 
 `termux_python` provides python bindings for https://wiki.termux.com/wiki/Termux:API
-and other termux specific binaries.
+and other termux scripts.
 
 > **NOTE**:
 > I do not frequently work on this project, and most of the code was written on my phone (thanks termux) while being
