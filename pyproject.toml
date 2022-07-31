@@ -5,6 +5,10 @@ description = "termux python bindings"
 authors = ["mlvl42 <melvil.guillaume@gmail.com>"]
 license = "MIT"
 repository = "https://github.com/mlvl42/termux_python"
+packages = [
+	{ include = "termux" },
+]
+readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.10"

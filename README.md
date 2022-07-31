@@ -7,7 +7,7 @@ and other termux scripts.
 
 This package is available via pip:
 ```
-pip install termux_python
+pip install termux-python
 ```
 
 For development purposes, use [poetry](https://python-poetry.org/):
