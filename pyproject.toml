@@ -3,6 +3,7 @@ name = "termux_python"
 version = "0.1.0"
 description = "termux python bindings"
 authors = ["mlvl42 <melvil.guillaume@gmail.com>"]
+license = "MIT"
 
 [tool.poetry.dependencies]
 python = "^3.10"
